@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fira+Sans+Condensed:ital,wght@1,200&family=Roboto:wght@300&display=swap');
 .App {
-  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+h1 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+.logoBlock {
+  /*background-color: #AC183A;*/
+  display: flex;
+  padding: 50px;
+  padding-bottom: 0;
+}
+.logo {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 80px;
+}
+.slogan {
+  padding-top: 20px;
+}
+.color1 {
+  color: #FE24E8FF;
+}
+.color2 {
+  color: #FF8500;
+}
+.color3 {
+  color: #FE2456;
+}
+.descriptionBlock {
+  display: flex;
+  padding: 50px;
+  padding-bottom: 0;
+}
+.legal {
+  display: flex;
+  flex-flow: row;
+  background-color: #AC183A;
+  color: white;
+}
+.legalImg {
+  width: 500px;
 }
