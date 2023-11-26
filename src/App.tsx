@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,8 +7,9 @@ function App() {
       <div className="logoBlock">
         <div className="logo"><span className="color1">Fun</span> <span className="color2">Fan</span> <span
           className="color3">WCS</span></div>
-        <div className="slogan">измеритель вовлеченности</div>
+        <div className="slogan">индикатор вовлеченности</div>
       </div>
+      <div className="status">status: разработка концепции</div>
       <div className="descriptionBlock">
         <div>
           <h1>Концепт</h1>
@@ -37,7 +37,6 @@ function App() {
             </ol>
           </div>
           <h1>Начисляемые баллы</h1>
-          <div><i>Рабочая версия</i></div>
           <ol>
             <li>10 баллов - JnJ</li>
             <li>+10 баллов - Strictly</li>
@@ -46,20 +45,132 @@ function App() {
             <li>+1 балл - каждая следующая пятерка после второй с конца (при наличии)</li>
           </ol>
         </div>
-        <div>
-          <h1>Манифест</h1>
-          <div>
-            <ol>
-              <li>Каждый участник сообщества уделяет занятию танцами столько времени и сил,
-                сколько позволяют субъективные и объективные обстоятельства
-              </li>
-              <li>Каждый участник может желать получить оценку своих занятий относительно своих возможностей</li>
-              <li>Любой из существующих инструментов оценки прогресса, лишь частично учитывает обстоятельства
-                конкретного участника
-              </li>
-              <li>Данный измеритель только один из инструментов</li>
-            </ol>
-          </div>
+        <div className="results">
+          <div>Тестовый пример</div>
+          <table>
+            <tr style={{backgroundColor:"orange"}}>
+              <td rowSpan={5}>Огонь!</td>
+              <td>Маша</td>
+              <td>54</td>
+            </tr>
+            <tr style={{backgroundColor:"orange"}}>
+              <td>Денис</td>
+              <td>52</td>
+            </tr>
+            <tr style={{backgroundColor:"orange"}}>
+              <td>Сергей</td>
+              <td>51</td>
+            </tr>
+            <tr style={{backgroundColor:"orange"}}>
+              <td>Света</td>
+              <td>50</td>
+            </tr>
+            <tr style={{backgroundColor:"orange"}}>
+              <td>Надежда</td>
+              <td>50</td>
+            </tr>
+
+            <tr style={{backgroundColor:"#db8b00"}}>
+              <td rowSpan={5}>Невероятно активные</td>
+              <td>Данила</td>
+              <td>48</td>
+            </tr>
+            <tr style={{backgroundColor:"#db8b00"}}>
+              <td>Елена</td>
+              <td>45</td>
+            </tr>
+            <tr style={{backgroundColor:"#db8b00"}}>
+              <td>Сергей</td>
+              <td>40</td>
+            </tr>
+            <tr style={{backgroundColor:"#db8b00"}}>
+              <td>Дмитрий</td>
+              <td>40</td>
+            </tr>
+            <tr style={{backgroundColor:"#db8b00"}}>
+              <td>Федор</td>
+              <td>40</td>
+            </tr>
+
+            <tr style={{backgroundColor:"#cc7810"}}>
+              <td rowSpan={5}>Чрезвычайно активные</td>
+              <td>Никита</td>
+              <td>38</td>
+            </tr>
+            <tr style={{backgroundColor:"#cc7810"}}>
+              <td>Валентина</td>
+              <td>37</td>
+            </tr>
+            <tr style={{backgroundColor:"#cc7810"}}>
+              <td>Арина</td>
+              <td>35</td>
+            </tr>
+            <tr style={{backgroundColor:"#cc7810"}}>
+              <td>Дмитрий</td>
+              <td>30</td>
+            </tr>
+            <tr style={{backgroundColor:"#cc7810"}}>
+              <td>Иван</td>
+              <td>30</td>
+            </tr>
+
+            <tr style={{backgroundColor:"#b36424"}}>
+              <td rowSpan={5}>Очень активные</td>
+              <td>Наташа</td>
+              <td>27</td>
+            </tr>
+            <tr style={{backgroundColor:"#b36424"}}>
+              <td>Денис</td>
+              <td>24</td>
+            </tr>
+            <tr style={{backgroundColor:"#b36424"}}>
+              <td>Сергей</td>
+              <td>21</td>
+            </tr>
+            <tr style={{backgroundColor:"#b36424"}}>
+              <td>Дмитрий</td>
+              <td>20</td>
+            </tr>
+            <tr style={{backgroundColor:"#b36424"}}>
+              <td>Федор</td>
+              <td>20</td>
+            </tr>
+
+            <tr style={{backgroundColor:"#7a4920"}}>
+              <td rowSpan={5}>Весьма активные</td>
+              <td>Настя</td>
+              <td>13</td>
+            </tr>
+            <tr style={{backgroundColor:"#7a4920"}}>
+              <td>Константин</td>
+              <td>12</td>
+            </tr>
+            <tr style={{backgroundColor:"#7a4920"}}>
+              <td>Мила</td>
+              <td>11</td>
+            </tr>
+            <tr style={{backgroundColor:"#7a4920"}}>
+              <td>Дмитрий</td>
+              <td>10</td>
+            </tr>
+            <tr style={{backgroundColor:"#7a4920"}}>
+              <td>Валерий</td>
+              <td>10</td>
+            </tr>
+          </table>
+          {/*<h1>Манифест</h1>*/}
+          {/*<div>*/}
+          {/*  <ol>*/}
+          {/*    <li>Каждый участник сообщества уделяет занятию танцами столько времени и сил,*/}
+          {/*      сколько позволяют субъективные и объективные обстоятельства*/}
+          {/*    </li>*/}
+          {/*    <li>Каждый участник может желать получить оценку своих занятий относительно своих возможностей</li>*/}
+          {/*    <li>Любой из существующих инструментов оценки прогресса, лишь частично учитывает обстоятельства*/}
+          {/*      конкретного участника*/}
+          {/*    </li>*/}
+          {/*    <li>Данный индикатор только один из инструментов</li>*/}
+          {/*  </ol>*/}
+          {/*</div>*/}
         </div>
       </div>
     </div>

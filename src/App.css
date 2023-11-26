@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fira+Sans+Condensed:ital,wght@1,200&family=Roboto:wght@300&display=swap');
+
+body {
+  background-color: #260040;
+}
+
 .App {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .App-logo {
@@ -39,6 +45,7 @@
 }
 h1 {
   font-family: 'Fira Sans Condensed', sans-serif;
+  color: orange;
 }
 .logoBlock {
   /*background-color: #AC183A;*/
@@ -62,6 +69,10 @@ h1 {
 .color3 {
   color: #FE2456;
 }
+.status {
+  font-size: 11px;
+  padding: 10px 50px;
+}
 .descriptionBlock {
   display: flex;
   padding: 50px;
@@ -75,4 +86,8 @@ h1 {
 }
 .legalImg {
   width: 500px;
+}
+
+.results table td {
+  padding: 10px 70px 10px;
 }
