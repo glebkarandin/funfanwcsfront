@@ -88,6 +88,8 @@ h1 {
   width: 500px;
 }
 
-.results table td {
-  padding: 10px 70px 10px;
+.results table td, .results-legenda table td {
+  padding: 10px 100px 10px;
+}.results-legenda table td {
+  padding: 10px 30px 10px;
 }
