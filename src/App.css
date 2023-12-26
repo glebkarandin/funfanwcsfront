@@ -93,3 +93,18 @@ h1 {
 }.results-legenda table td {
   padding: 10px 30px 10px;
 }
+.active1Color {
+  background-color: #7a2073;
+}
+.active2Color {
+  background-color: #b36424;
+}
+.active3Color {
+  background-color: #cc7810;
+}
+.active4Color {
+  background-color: #db8b00;
+}
+.active5Color {
+  background-color: orange;
+}

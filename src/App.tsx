@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 
-const active1Color = "#7a2073";
-const active2Color = "#b36424";
-const active3Color = "#cc7810";
-const active4Color = "#db8b00";
-const active5Color = "orange";
+const active1Color = "active1Color";
+const active2Color = "active2Color";
+const active3Color = "active3Color";
+const active4Color = "active4Color";
+const active5Color = "active5Color";
 
 function App() {
 
@@ -40,6 +40,9 @@ function App() {
         case "STRICTLY_INTERMEDIATE":
         case "STRICTLY_OPEN":
           dancer.points += 20;
+          break;
+        case "CABARET":
+          dancer.points += 30;
           break;
         case "ROUTINE":
           dancer.points += 50;
@@ -97,12 +100,16 @@ function App() {
           <ol>
             <li>10 баллов - JnJ</li>
             <li>20 баллов - Strictly</li>
+            <li>30 баллов - Cabaret</li>
             <li>50 баллов - Routine</li>
             <li>60 баллов - Show</li>
           </ol>
         </div>
         <div className="results">
-          <div>Учтены: Westie Fest Gala 2023, WCS Утренник 2023*</div>
+          <div>Учтены:<br />
+            Westie Fest Gala 2023,<br />
+            WCS Утренник 2023, <br />
+            Шуба Дуба Свинг 2023 (Кабаре частично)*</div>
           <table>
           {
             participants.map((participant: any) => {
@@ -120,7 +127,7 @@ function App() {
                 color = active5Color;
               }
               return (
-                <tr style={{backgroundColor: color}}>
+                <tr className={color}>
                   <td>{participant.name}</td>
                   <td>{participant.points}</td>
                 </tr>
@@ -134,7 +141,7 @@ function App() {
           </div>
         </div>
         <div className="results-legenda">
-          <div>Легенда</div>
+          <div><br /><br /><br />Легенда</div>
           <table>
             <tr style={{backgroundColor:"orange"}}>
               <td>Огонь!</td>
